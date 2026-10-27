@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Simple Background Changer</title>
+</head>
+<body>
+<button onClick="changeColor()">Change Color</button>
+<button onClick="changeBackgroundImage()">Change Background Image</button>
+<button onClick="resetBackground()">Resume to Normal</button>
+<script>
+const originalColor = "white";
+const originalImage = "";
+
+function changeColor(){
+document.body.style.backgroundImage = "";
+document.body.style.backgroundColor = "blue";
+}
+
+function changeBackgroundImage(){
+document.body.style.backgroundImage ="url('https://4kwallpapers.com/images/walls/thumbs_2t/25608.jpg')";
+document.body.style.backgroundSize="cover";
+document.body.style.backgroundColor="";
+}
+function resetBackground(){
+document.body.style.backgroundColor=originalColor;
+document.body.style.backgroundImage=originalImage;
+}
+</script>
+</body>
+</html>
